@@ -26,7 +26,7 @@ jobs:
   
     - name: Pack Release version
       if: github.event_name == 'push'
-      run: dotnet pack src\Stateless\Stateless.csproj --configuration Release
+      run: dotnet pack src\Stateless\Stateless.csproj --version-suffix tealinc --configuration Release
     - name: Publish Release version
       if: github.event_name == 'push'
       run: dotnet nuget push src\Stateless\bin\Release\*.nupkg --source "github"
