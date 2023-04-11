@@ -2,7 +2,7 @@ name: CI for Pull Requests
 
 on:
   push:
-    branches: [ dev, lipatov/850-publish ]
+    branches: [ dev ]
   pull_request:
     branches: [ dev ]
 
